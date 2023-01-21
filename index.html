@@ -8,8 +8,143 @@
     <title>Portafolio Personal</title>
   </head>
   <body>
-    <h1>Personal Portfolio</h1>
-
+    <header id="header-top">
+      <nav class="nav-space">
+        <div class="logo">MAPL</div>
+        <ol class="items-nav">
+          <li><a href="#sobre-mi">Sobre mi</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Hobbies">Hobbies</a></li>
+          <li><a href="#Formacion">Formacion</a></li>
+          <li><a href="#Proyectos">Proyectos</a></li>
+          <li><a href="#Contacto">Contacto</a></li>
+        </ol>
+      </nav>
+      <div class="info-presentation">
+        <div class="info-personal-top">
+          <h1>Hola, mi nombre es Miguel y soy desarrollador web</h1>
+          <div>
+            Soy una persona a quien le apasiona la tecnologia y sobre todo la
+            programacion.
+          </div>
+          <div class="btns-presentation">
+            <button
+              onclick="location.href='https://github.com/leghram'"
+              class="btn-top-link"
+            >
+              Github<img src="./assets/vector.png" />
+            </button>
+            <button class="btn-top-link">
+              Linkedin<img src="./assets/vector.png" />
+            </button>
+          </div>
+        </div>
+        <div>
+          <img src="./assets/profile.png" alt="" />
+        </div>
+      </div>
+    </header>
+    <section class="sec-page" id="sobre-mi">
+      <div class="div-centrado">
+        <div class="div-content-sobre-mi">
+          <h2>Sobre Mi</h2>
+          <p>
+            Llevo ya un tiempo en el campo de la programacion. Inicie llevando
+            cursos de programacion y formacion gratuita, luego inicie en uan
+            institucion que me permite poder seguir desarrollando y ahora sigo
+            un programa de especializacion de software.
+          </p>
+          <p>
+            En estas experiencias formativas he aprendido a poder desarrollar
+            diferentes tipos de sistemas web, usando diferentes tipos de
+            tecnologias.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="sec-page" id="Skills">
+      <div class="div-centrado">
+        <h2>Skills</h2>
+        <div id="list-skills"></div>
+      </div>
+    </section>
+    <section class="sec-page" id="Hobbies">
+      <div class="div-centrado">
+        <h2>Hobbies</h2>
+        <div id="list-hobbies"></div>
+      </div>
+    </section>
+    <section class="sec-page" id="Formacion">
+      <div class="div-centrado">
+        <h2>Formacion Academica</h2>
+        <div id="list-formacion">
+          <div class="box-formacions">
+            <div class="box-white-formacion">
+              <img src="./assets/FORMACION/analisis.png" alt="" />
+            </div>
+            <div class="info-information">
+              <h3>Analisis de datos</h3>
+              <p>2018-Bootcamps</p>
+            </div>
+          </div>
+          <div class="box-formacions">
+            <div class="box-white-formacion">
+              <img src="./assets/FORMACION/alura.png" alt="" />
+            </div>
+            <div class="info-information">
+              <h3>Formación en UX Design</h3>
+              <p>2022-Alura</p>
+            </div>
+          </div>
+          <div class="box-formacions">
+            <div class="box-white-formacion">
+              <img src="./assets/FORMACION/diseno.png" alt="" />
+            </div>
+            <div class="info-information">
+              <h3>Posgrado en design</h3>
+              <p>2022-Fuentes Google</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-page" id="Proyectos">
+      <div class="div-centrado">
+        <h2>Proyectos Personales</h2>
+        <div id="list-proyectos"></div>
+      </div>
+    </section>
+    <section class="sec-page" id="Contacto">
+      <div class="div-centrado">
+        <div class="contacto-space">
+          <img src="./assets/CONTACTO/contacto.png" alt="" />
+          <form>
+            <h2>Contacto</h2>
+            <p>¿Quieres contactarme?</p>
+            <p>
+              Complete el siguiente formulario y me pondré en contacto con usted
+              lo antes posible.
+            </p>
+            <input type="text" name="" id="" placeholder="nombre" />
+            <input type="text" name="" id="" placeholder="email" />
+            <input type="text" name="" id="" placeholder="asunto" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="mensaje"
+            ></textarea>
+            <button type="reset">Enviar Mensaje</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Desarrollo por Miguel PL</p>
+      <p>2023</p>
+    </footer>
+    <button onclick="location.href='#header-top'" class="sube-flecha">></button>
     <script src="./index.js"></script>
   </body>
 </html>

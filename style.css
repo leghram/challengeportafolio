@@ -1,5 +1,318 @@
+:root {
+  --var-blue: #052051;
+  --var-gray: #ced4da;
+  --var-blue-back: #e9ecf8;
+  font-family: "Raleway";
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+li {
+  outline: none;
+  list-style: none;
+  font-size: 1.5rem;
+  padding: 2rem 0;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+a {
+  text-decoration: none;
+  list-style: none;
+}
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.logo {
+  color: var(--var-blue);
+  font-weight: bolder;
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.nav-space {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.items-nav {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-presentation {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.info-personal-top {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: space-around;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-family: "Raleway";
+  color: #464646;
+  padding-bottom: 2rem;
+}
+
+.btns-presentation {
+  display: flex;
+}
+
+.btns-presentation button {
+  width: 8rem;
+  border: none;
+  font-size: 1.5rem;
+  text-align: left;
+  margin-right: 2rem;
+  padding: 5px;
+  border: solid 2px var(--var-blue);
+  border-radius: 2rem;
+}
+
+.btn-top-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-top-link:hover {
+  background-color: var(--var-blue);
+  color: white;
+}
+
+.btn-top-link img {
+  margin-left: 10px;
+}
+
+.sec-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.div-centrado {
+  width: 90%;
+  margin: 4rem auto;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+#sobre-mi {
+  background-color: #eaf2fd;
+}
+
+.div-content-sobre-mi {
+  width: 70%;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.div-content-sobre-mi h2 {
+  text-align: left;
+}
+
+#list-skills,
+#list-hobbies {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.box-skill {
+  padding-left: 10px;
+  width: 170px;
+  height: 170px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin: 1rem 0;
+}
+
+.box-skill:hover {
+  border: solid 2px var(--var-blue);
+  border-radius: 2rem;
+}
+
+.box-skill div {
+  height: 2rem;
+  width: 2rem;
+}
+
+.box-skill div img {
+  width: auto;
+  height: auto;
+}
+
+#Formacion {
+  background-color: #eaf2fd;
+}
+
+#list-formacion {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.box-white-formacion {
+  background-color: white;
+  height: 286px;
+  width: 368px;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info-information {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#list-proyectos {
+  margin: 3rem 0;
+}
+
+.proyecto {
+  display: flex;
+  margin: 3rem 0;
+}
+
+.proyecto2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: 3rem 0;
+}
+
+.proyecto img {
+  width: 60%;
+}
+.proyecto .info-proyecto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2rem;
+}
+
+.proyecto2 .info-proyecto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2rem;
+}
+
+.info-proyecto h3 {
+  font-size: 1.5rem;
+  font-family: "Raleway";
+  color: #464646;
+}
+
+.botones-proyecto {
+  margin: 1rem 0;
+  display: flex;
+}
+
+.botones-proyecto a {
+  width: 8rem;
+  font-family: "Raleway";
+  font-weight: 400;
+  padding: 1rem 0;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.botones-proyecto :first-child {
+  border: solid #2a7ae4 2px;
+  color: #2a7ae4;
+}
+
+.botones-proyecto :last-child {
+  border: none;
+  background-color: #2a7ae4;
+  color: white;
+}
+
+#Contacto {
+  background-color: #eaf2fd;
+}
+
+.contacto-space {
+  display: flex;
+  justify-content: space-around;
+}
+
+form {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+form h2 {
+  text-align: left;
+  padding-bottom: 1rem;
+}
+
+form input {
+  height: 3rem;
+  margin: 1rem 0;
+  border: none;
+  outline: none;
+}
+
+form textarea {
+  border: none;
+  outline: none;
+  margin: 2rem 0;
+}
+
+form button {
+  width: 10rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  background-color: #2a7ae4;
+  color: white;
+  border: none;
+}
+
+footer {
+  text-align: center;
+  padding: 5rem;
+}
+
+.sube-flecha {
+  display: block;
+  color: white;
+  background-color: var(--var-blue);
+  height: 4rem;
+  width: 4rem;
+  font-size: 3rem;
+  transform: rotate(-90deg);
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  border-radius: 1rem;
 }
